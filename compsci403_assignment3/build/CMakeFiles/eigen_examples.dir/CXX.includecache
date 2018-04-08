@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wyliao/Desktop/compsci403_assignment3/src/eigen_examples.cpp
+algorithm
+-
+iostream
+-
+sstream
+-
+eigen3/Eigen/Dense
+-
+eigen3/Eigen/Eigenvalues
+-
+
