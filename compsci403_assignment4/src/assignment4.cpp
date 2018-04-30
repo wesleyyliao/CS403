@@ -119,7 +119,7 @@ std::pair<float, float> commandVelHelper(float v_0, float w_0, float angle, std:
   float dynVMin = v_0 - aVMax * deltaT;
   float dynWMax = w_0 + aWMax * deltaT;
   float dynWMin = w_0 - aWMax * deltaT;
-  float currentAngle = angle; 
+  float currentAngle = angle;
   //dynamic window bounded by v [0, .5] w [-1.5, 1.5]
   if(dynVMax > vMax){
     dynVMax = vMax;
@@ -289,7 +289,7 @@ int main(int argc, char **argv) {
   std::cout << gGamma << std::endl;
   ros::init(argc, argv, "assignment4");
   ros::NodeHandle n;
-  
+
   // Perform operations defined in Assignment 4
 
   checkPointSrv = n.advertiseService("/COMPSCI403/CheckPoint", CheckPoint);
